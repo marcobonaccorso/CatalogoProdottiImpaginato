@@ -10,19 +10,20 @@ import { Prodotto } from '../prodotto';
 })
 export class PaginaPrincipaleComponent implements OnInit {
 
-  prodotto= new Prodotto();
+  prodotto = new Prodotto();
 
   constructor(private router: Router, public med: MediatorService) { }
 
   ngOnInit(): void {
   }
 
-  aggiungi(){
+  aggiungi() {
+    this.med.prodotti.push(this.prodotto);
 
   }
 
-  conta(){
-
+  conta() {
+    this.router.navigateByUrl("/CountPage");
   }
 
 }
