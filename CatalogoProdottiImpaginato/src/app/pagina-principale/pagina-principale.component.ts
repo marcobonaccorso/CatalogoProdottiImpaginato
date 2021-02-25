@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { MediatorService } from '../mediator.service';
 import { Prodotto } from '../prodotto';
-
+//commento prova
 @Component({
   selector: 'app-pagina-principale',
   templateUrl: './pagina-principale.component.html',
