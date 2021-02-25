@@ -1,1 +1,38 @@
-<p>search-page works!</p>
+<input type="text" placeholder="Search criterio" [(ngModel)]="criterioRicerca">
+<button (click)="cerca()">Cerca</button>
+<button (click)="torna()">Pagina Principale</button>
+<br>
+<br>
+<table *ngIf="listaCompletaVis">
+    <tr>
+        <th>Codice</th>
+        <th>Prezzo</th>
+        <th>Descrizione</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let p of med.prodotti">
+        <td>{{p.codice}}</td>
+        <td>{{p.prezzo}}</td>
+        <td>{{p.descrizione}}</td>
+        <td>
+            <button>Cancella</button>
+        </td>
+    </tr>
+</table>
+
+<table *ngIf="listaFiltrataVis">
+    <tr>
+        <th>Codice</th>
+        <th>Prezzo</th>
+        <th>Descizione</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let l of listaFiltrata">
+        <td>{{l.codice}}</td>
+        <td>{{l.prezzo}}</td>
+        <td>{{l.descrizione}}</td>
+        <td>
+            <button>Cancella</button>
+        </td>
+    </tr>
+</table>

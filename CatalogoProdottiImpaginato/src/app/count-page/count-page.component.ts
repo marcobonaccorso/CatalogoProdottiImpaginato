@@ -13,6 +13,8 @@ export class CountPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  conta(){}
+  
   torna() {
     this.router.navigateByUrl("/PaginaPrincipale");
   }

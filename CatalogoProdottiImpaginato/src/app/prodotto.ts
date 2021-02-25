@@ -1,6 +1,5 @@
-export class Prodotto{
-   
-    codice: string="";
-    descrizione: string="";
-    prezzo: number;
+export class Prodotto {
+    codice: string = "";
+    descrizione: string = "";
+    prezzo: string="";
 }
