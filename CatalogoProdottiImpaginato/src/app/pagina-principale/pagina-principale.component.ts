@@ -9,6 +9,7 @@ import { Prodotto } from '../prodotto';
   styleUrls: ['./pagina-principale.component.css']
 })
 export class PaginaPrincipaleComponent implements OnInit {
+  
 
   prodotto = new Prodotto();
 
@@ -28,5 +29,6 @@ export class PaginaPrincipaleComponent implements OnInit {
   cancellaProdotto(i: number) {
     this.med.prodotti.splice(i, 1);
   }
-  
+
+
 }

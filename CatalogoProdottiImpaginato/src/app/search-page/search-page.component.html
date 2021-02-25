@@ -1,1 +1,20 @@
-<p>search-page works!</p>
+<input type="text" placeholder="Search criterio" [(ngModel)]="criterioRicerca">
+
+<table border=3px *ngIf="prodotti"> 
+    <th>Codice</th>
+    <th>Prezzo</th>
+    <th>Descrizione</th>
+    <th>Gestisci</th>
+    <tr *ngFor="let x of med.prodotti,index as i">
+  
+      <td>{{x.codice}}</td>
+  
+      <td>{{x.prezzo}}</td>
+  
+      <td>{{x.descrizione}}</td>
+  
+      <td>
+        <button (click)="cancellaProdotto(prodotto)">X</button>
+      </td>
+    </tr>
+  </table>
