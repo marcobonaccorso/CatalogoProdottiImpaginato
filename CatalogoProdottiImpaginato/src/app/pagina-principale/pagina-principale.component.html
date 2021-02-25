@@ -1,3 +1,4 @@
+<body class="body">
 <h2>CATALOGO PRODOTTI </h2>
 <hr>
 Codice
@@ -13,7 +14,7 @@ Descrizione
 <button (click)="conta()">Conta</button>
 <br>
 <br>
-<table border=3px>
+<table align="center" border=3px>
   <th>Codice</th>
   <th>Prezzo</th>
   <th>Descrizione</th>
@@ -22,7 +23,7 @@ Descrizione
 
     <td>{{x.codice}}</td>
 
-    <td>{{x.prezzo}}</td>
+    <td>{{x.prezzo}} €</td>
 
     <td>{{x.descrizione}}</td>
 
@@ -31,3 +32,4 @@ Descrizione
     </td>
   </tr>
 </table>
+</body>

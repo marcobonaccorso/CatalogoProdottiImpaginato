@@ -29,7 +29,7 @@ export class SearchPageComponent implements OnInit {
     this.listaFiltrataVis = true;
     this.listaFiltrata = this.med.prodotti;
     this.listaFiltrata = this.listaFiltrata.filter(p=>p.codice==this.criterioRicerca 
-    || p.prezzo == this.criterioRicerca || p.descrizione==this.criterioRicerca);
+     || p.descrizione==this.criterioRicerca);
   }
 }
 
