@@ -11,7 +11,7 @@ import { Prodotto } from '../prodotto';
 export class PaginaPrincipaleComponent implements OnInit {
 
   prodotto = new Prodotto();
-
+  
   constructor(private router: Router, public med: MediatorService) { }
 
   ngOnInit(): void {
@@ -24,6 +24,9 @@ export class PaginaPrincipaleComponent implements OnInit {
 
   conta() {
     this.router.navigateByUrl("/CountPage");
+  }
+  cancellaProdotto(i: number) {
+    this.med.prodotti.splice(i, 1);
   }
 
 }

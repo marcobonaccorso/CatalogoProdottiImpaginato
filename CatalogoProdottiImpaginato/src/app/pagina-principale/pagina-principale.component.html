@@ -17,7 +17,7 @@ Descrizione
   <th>Prezzo</th>
   <th>Descrizione</th>
   <th>Gestisci</th>
-  <tr *ngFor="let x of med.prodotti">
+  <tr *ngFor="let x of med.prodotti,index as i">
 
     <td>{{x.codice}}</td>
 
