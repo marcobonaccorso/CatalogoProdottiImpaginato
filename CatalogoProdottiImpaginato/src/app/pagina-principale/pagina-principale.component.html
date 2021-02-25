@@ -13,13 +13,20 @@ Descrizione
 <button (click)="conta()">Conta</button>
 <br>
 <table border=3px>
+  <th>Codice</th>
+  <th>Prezzo</th>
+  <th>Descrizione</th>
+  <th>Gestisci</th>
   <tr *ngFor="let x of med.prodotti">
-    
+
     <td>{{x.codice}}</td>
-    
+
     <td>{{x.prezzo}}</td>
-    
+
     <td>{{x.descrizione}}</td>
 
+    <td>
+      <button (click)="cancellaProdotto(prodotto)">X</button>
+    </td>
   </tr>
 </table>
