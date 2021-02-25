@@ -28,4 +28,5 @@ export class PaginaPrincipaleComponent implements OnInit {
   cancellaProdotto(i: number) {
     this.med.prodotti.splice(i, 1);
   }
+  
 }
