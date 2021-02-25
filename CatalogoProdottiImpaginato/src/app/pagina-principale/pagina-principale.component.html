@@ -1,1 +1,25 @@
-<p>pagina-principale works!</p>
+<h2>CATALOGO PRODOTTI </h2>
+<hr>
+Codice
+<input type="text" [(ngModel)]="prodotto.codice">
+Prezzo
+<input type="text" [(ngModel)]="prodotto.prezzo">
+Descrizione
+<input type="text" [(ngModel)]="prodotto.descrizione">
+<br>
+<br>
+<button (click)="aggiungi()">Aggiungi</button>
+<br>
+<button (click)="conta()">Conta</button>
+<br>
+<table border=3px>
+  <tr *ngFor="let x of med.prodotti">
+    
+    <td>{{x.codice}}</td>
+    
+    <td>{{x.prezzo}}</td>
+    
+    <td>{{x.descrizione}}</td>
+
+  </tr>
+</table>

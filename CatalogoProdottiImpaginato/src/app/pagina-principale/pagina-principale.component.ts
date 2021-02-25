@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MediatorService } from '../mediator.service';
+import { Prodotto } from '../prodotto';
 
 @Component({
   selector: 'app-pagina-principale',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaPrincipaleComponent implements OnInit {
 
-  constructor() { }
+  prodotto= new Prodotto();
+
+  constructor(private router: Router, public med: MediatorService) { }
 
   ngOnInit(): void {
+  }
+
+  aggiungi(){
+
+  }
+
+  conta(){
+
   }
 
 }

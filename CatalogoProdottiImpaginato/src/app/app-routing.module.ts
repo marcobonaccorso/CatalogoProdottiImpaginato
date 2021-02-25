@@ -7,7 +7,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
 const routes: Routes = [
   {path: 'PaginaPrincipale', component: PaginaPrincipaleComponent},
   {path: 'SearchPage', component: SearchPageComponent},
-  { path: 'CountPage', component: CountPageComponent}
+  { path: 'CountPage', component: CountPageComponent},
+  { path: '', redirectTo: '/PaginaPrincipale', pathMatch: 'full'},
 ];
 
 @NgModule({
